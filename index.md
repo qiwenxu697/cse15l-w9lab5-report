@@ -20,5 +20,7 @@ bash script
 
 <img width="875" alt="截屏2024-03-11 下午7 39 20" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/4734b591-a3b5-4a2e-a520-31cb7f21c407">
 
+The reason of the error is "result.add(list1.get(index1));" instead of result.add(list2.get(index2)); in line 40. It is a mistake I often make because I will copy and paste the code and forget to change it.
+
 
 
