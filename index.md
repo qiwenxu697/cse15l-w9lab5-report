@@ -12,7 +12,11 @@ You can try to draw things out when you are merge {"a", "b", "c"} and {"c", "d",
 3. When I merge {"a", "b", "c"} and {"c", "d", "e"}, index1 and index2 initialize as zero. If index1 is less than the size of list1 or index2 is less then the size of list2, the smallest element in either one of the list in location index according to the number of the list. Here, "a" will be added to the result array. Next, "b" will be added. Then "c" will be added. When elements either one of the list are all adds to the result. The remaining elements in the other list will be added to the result. "c", "d", "e" will be added to the result. The reason of the error is `result.add(list1.get(index1));` instead of `result.add(list2.get(index2));` in line 40. (It is a mistake I often make because I will copy and paste the code from the previous line and forget to change it.)
 
 4. The file & directory structure
+
+files structure
 <img width="392" alt="截屏2024-03-12 上午11 17 52" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/7a678a9f-f505-46c2-807e-3d61876e0c5e">
+
+directory 
 <img width="396" alt="截屏2024-03-12 上午11 17 40" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/267b1d2c-c565-44f0-b221-ae4ecfb0d100">
 
 terminal output
