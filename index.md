@@ -6,7 +6,6 @@
 <img width="982" alt="截屏2024-03-11 下午4 36 51" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/2a1d7acd-94b4-46f8-aeae-abb647a22a6d">
 <img width="1006" alt="截屏2024-03-11 下午4 36 59" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/e19e50cc-6641-4670-b4e0-ca06827f21c7">
 
-
 2. TA: Hi. You logic is correct. According to your sceenshot, there is an IndexOutOfBoundsException in the second test. Can you give an example of how the element in two arrays get merge together?
 3. When I merge {"a", "b", "c"} and {"c", "d", "e"}, index1 and index2 initialize as zero. If index1 is less than the size of list1 or index2 is less then the size of list2, the smallest element in either one of the list in location index according to the number of the list. Here, "a" will be added to the result array. Next, "b" will be added. Then "c" will be added. When elements either one of the list are all adds to the result. The remaining elements in the other list will be added to the result. "c", "d", "e" will be added to the result. The reason of the error is `result.add(list1.get(index1));` instead of `result.add(list2.get(index2));` in line 40. (It is a mistake I often make because I will copy and paste the code from the previous line and forget to change it.)
 
