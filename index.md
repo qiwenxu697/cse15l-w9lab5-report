@@ -2,12 +2,14 @@
 ## Part 1 – Debugging Scenario 
 1. Student: I get one test failed. It shows the second test has an IndexOutOfBoundsException according to "java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 3." Did I make mistake on increasing the index1 and index2? Is my logic of comparing the index to the list size incorrect? 
 
-<img width="475" alt="截屏2024-03-11 下午4 36 17" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/76bb7bc7-3114-4ce8-ad16-5f19bfe53d61">
-<img width="982" alt="截屏2024-03-11 下午4 36 51" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/2a1d7acd-94b4-46f8-aeae-abb647a22a6d">
-<img width="1006" alt="截屏2024-03-11 下午4 36 59" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/e19e50cc-6641-4670-b4e0-ca06827f21c7">
+<img width="650" alt="截屏2024-03-12 下午12 46 32" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/fe97392d-4f03-4d4b-a114-7d49441ed9d2">
+<img width="943" alt="截屏2024-03-12 下午12 47 26" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/3bd9baaf-4d51-48e3-a038-a48689b8cb55">
+<img width="607" alt="截屏2024-03-12 下午12 49 12" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/c75c4fc0-e0ed-4be1-85f5-81a528f113ec">
+
 
 2. TA: Hi. You logic is correct. According to your sceenshot, there is an IndexOutOfBoundsException in the second test. Can you give an example of how the element in two arrays get merge together?
-3. When I merge {"a", "b", "c"} and {"c", "d", "e"}, index1 and index2 initialize as zero. If index1 is less than the size of list1 or index2 is less then the size of list2, the smallest element in either one of the list in location index according to the number of the list. Here, "a" will be added to the result array. Next, "b" will be added. Then "c" will be added. When elements either one of the list are all adds to the result. The remaining elements in the other list will be added to the result. "c", "d", "e" will be added to the result. The reason of the error is `result.add(list1.get(index1));` instead of `result.add(list2.get(index2));` in line 40. (It is a mistake I often make because I will copy and paste the code from the previous line and forget to change it.)
+3. When I merge {"a", "b", "c"} and {"c", "d", "e"}, index1 and index2 initialize as zero. If index1 is less than the size of list1 or index2 is less then the size of list2, the smallest element in either one of the list in location index according to the number of the list. Here, "a" will be added to the result array. Next, "b" will be added. Then "c" will be added. When elements either one of the list are all adds to the result. The remaining elements in the other list will be added to the result. "c", "d", "e" will be added to the result.
+The reason of the error is `index1 += 1;` is needed after line 39. (It is a mistake I often make because I will copy and paste the code from the previous line and forget to change it.)
 
 <img width="741" alt="截屏2024-03-12 上午11 48 08" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/dfba19a7-adbc-49ad-a381-5c1b7a7826d9">
 
@@ -21,19 +23,20 @@ directory
 
 terminal output
 
-<img width="475" alt="截屏2024-03-11 下午4 36 17" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/9858a4b8-07e7-49d7-820f-dff10d8c34d3"> 
+<img width="607" alt="截屏2024-03-12 下午12 49 12" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/c61220ad-d5bb-49e7-9541-cf3da8aeb1de">
 
 Java file
 
-<img width="982" alt="截屏2024-03-11 下午4 36 51" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/f31d0dca-070b-4de3-855c-858999f1fa1b">
+<img width="650" alt="截屏2024-03-12 下午12 46 32" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/7db22621-4fa3-4216-a23b-9cc8e5e9ad9f">
 
 Java tester file
 
-<img width="1006" alt="截屏2024-03-11 下午4 36 59" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/848de44b-24bc-4c48-bb15-76e0b2d1dc34"> 
+<img width="943" alt="截屏2024-03-12 下午12 47 26" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/d6ff29ea-220a-4b6b-adb7-500ad8319884">
 
 bash script
 
-<img width="875" alt="截屏2024-03-11 下午7 39 20" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/4734b591-a3b5-4a2e-a520-31cb7f21c407">
+<img width="607" alt="截屏2024-03-12 下午12 49 12" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/3d659aec-1031-4584-a4f5-52a6aa6a1b94">
+
 
 
 ## Part 2 – Reflection
