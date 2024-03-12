@@ -5,12 +5,20 @@
 
 3. //
 terminal output
-<img width="475" alt="截屏2024-03-11 下午4 36 17" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/9858a4b8-07e7-49d7-820f-dff10d8c34d3"> \\
+
+<img width="475" alt="截屏2024-03-11 下午4 36 17" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/9858a4b8-07e7-49d7-820f-dff10d8c34d3"> 
+
 Java file
-<img width="982" alt="截屏2024-03-11 下午4 36 51" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/f31d0dca-070b-4de3-855c-858999f1fa1b"> \\
+
+<img width="982" alt="截屏2024-03-11 下午4 36 51" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/f31d0dca-070b-4de3-855c-858999f1fa1b">
+
 Java tester file
-<img width="1006" alt="截屏2024-03-11 下午4 36 59" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/848de44b-24bc-4c48-bb15-76e0b2d1dc34"> \\
+
+<img width="1006" alt="截屏2024-03-11 下午4 36 59" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/848de44b-24bc-4c48-bb15-76e0b2d1dc34"> 
+
 bash script
+
 <img width="875" alt="截屏2024-03-11 下午7 39 20" src="https://github.com/qiwenxu697/cse15l-w9lab5-report/assets/147675962/4734b591-a3b5-4a2e-a520-31cb7f21c407">
+
 
 
