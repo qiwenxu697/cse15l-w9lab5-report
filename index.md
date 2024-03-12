@@ -22,5 +22,5 @@ bash script
 
 The reason of the error is "result.add(list1.get(index1));" instead of result.add(list2.get(index2)); in line 40. It is a mistake I often make because I will copy and paste the code from the previous line and forget to change it.
 
-
-
+## Part 2 – Reflection
+I learned that using git add, git commit, git push to make a commit with the changes and push it to Github in the terminal. I also learned using jdb to run the JUnit tests to debug. I can use `stop` to stop the program at specific spot, use `locals` to check the variable, use `print` to print out the variable. The last thing I learned about vim. I can edit the file in terminal using vim by typing different shortcut notation.
